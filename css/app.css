@@ -1,0 +1,418 @@
+.body{
+    height: 100%;
+    width: 100vw;
+}
+
+*{
+    font-family: 'Noto Sans';
+    font-size: 1.5vw;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(../assets/fonts/NotoSans-Regular.ttf) format('truetype');
+}
+
+.smallerText{
+    font-size: 1vw;
+}
+
+/* For Header */
+.ILKEAheader{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 3;
+}
+
+.upperHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.lowerHeader{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    padding: 0 5vw;
+}
+
+.searchBar{
+    background-color: #e3e3e3;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    gap: 1vw;
+    padding-left: 2vw;
+    width: 30vw;
+}
+
+.searchText{
+    color: #b9b9b9;
+}
+
+.login{
+    display: flex;
+    width: max-content;
+    align-items: center;
+}
+
+.headerText{
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    color: black;
+    align-items: center;
+}
+
+.logo{
+    height: 5vw;
+}
+
+.picture{
+    height: 3vw;
+}
+
+/* For Footer */
+
+.ILKEAfooter{
+    background-color: #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3% 0;
+}
+
+.footerLeft{
+    display: flex;
+    flex-direction:column;
+}
+
+.footerMiddle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.footerRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1vw;
+}
+
+.footerButton{
+    background-color: #141414;
+    text-decoration: none;
+    color: white;
+    width: 10vw;
+    text-align: center;
+    border-radius: 40px;
+    display: inline-block;
+    padding: 0.5vw;
+}
+
+.title{
+    margin: 0;
+}
+
+.copyright{
+    height: 1.5vw;
+    align-self: center;
+}
+
+.company{
+    display: flex;
+    gap: 0.5em;
+}
+
+.social{
+    display: flex;
+    justify-content: space-around;
+}
+
+.socialpicture{
+    height: 4vw;
+}
+
+/* For all page */
+.mainPage{
+    width: 100%;
+}
+
+.contentPage{
+    padding: 1vw 5vw;
+    margin-bottom: 4vw;
+}
+
+.heading{
+    font-size: 3vw;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+/* For about page */
+.article{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.articleText{
+    display: block;
+    width: 70%;
+}
+
+.articlePicture{
+    width: 20%;
+    height: 20%;
+}
+
+/* Member page CSS */
+.formMain{
+    display: flex;
+    justify-content: space-around;
+    gap: 2vw;
+}
+
+.formImage{
+    width: 65%;
+    object-fit: fill;
+}
+
+.formHeading{
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.formMember{
+    display: flex;
+    gap: 0.75em;
+    flex-direction: column;
+}
+
+.formBar{
+    width: 16em;
+}
+
+.formDiv{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 1em;
+    height: 1em;
+}
+
+.formAddress{
+    width: 16em;
+    height: 5em;
+}
+
+input[type=checkbox] {
+    border: 0px;
+    width: 1em;
+    height: 1em;
+}
+
+.formSubmit{
+    text-align: center;
+    width: 5em;
+    background-color: #0014FF;
+    color: #fcd609;
+    border: 0;
+}
+
+/* For contact page */
+.contactGrid{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contactTile{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.contactPicture{
+    height: 100%;
+}
+
+/* For Gallery page */
+
+.galleryGrid{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.galleryTile{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    min-height: max-content;
+}
+
+.galleryText{
+    margin: 0;
+}
+
+.galleryPrice{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.galleryPicture{
+    height: 3vw;
+}
+
+/* For Home page */
+
+/* For the slideshow */
+.slideContainer {
+    width: 100%;
+    position: relative;
+}
+
+.slides{
+    display: none;
+}
+
+.promotionImage{
+    width: 100%;
+    height: 27vw;
+    object-fit: fill;
+}
+
+.prev, .next{
+    transition: 0.6s ease;
+    position: absolute;
+    top:40%;
+}
+
+.arrowImage{
+    height: 4vw;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* For the Brand, Category, and Furniture Exploration */
+
+.brandContainer, .categoryContainer, .furnitureContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.brandTile, .categoryTile, .furnitureTile{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.viewMore{
+    align-self: center;
+    height: 15vw;
+}
+
+/* Special for Brand Exploration */
+.brand1{
+    background-color: #a39285;
+}
+
+.brand2{
+    background-color: #dbff00;
+}
+
+.brand3{
+    background-color: #b69185;
+}
+
+.brand4{
+    background-color: #846a80;
+}
+
+.brandImage{
+    width: 100%;
+    height: 11vw;
+}
+
+.brandTitle{
+    font-size: 150%;
+    margin-top: 0.1vw;
+    margin-left: 0.5vw;
+    margin-bottom: 0.1vw;
+}
+
+.brandDesc{
+    margin-top: 0.1vw;
+    margin-left: 0.5vw;
+}
+
+.brandInfo{
+    height: 3vw;
+    margin: 1vw;
+    margin-left: 1.5vw;
+}
+
+/* Special for Category Exploration */
+
+.categoryText, .furnitureText{
+    margin: 0;
+    margin-left: 0.5em;
+}
+
+.cat1{
+    background-color: #a9a9ad;
+}
+
+.cat2{
+    background-color: #c74451;
+}
+
+.cat3{
+    background-color: #4a6690;
+}
+
+.cat4, .furn{
+    background-color: #d9d9d9;
+}
+
+@media only screen and (max-width: 800px) {
+    *{
+        font-size: 1.8vw;
+    }
+    .smallerText{
+        font-size: 1.4vw;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Family</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div class="mainPage">
+        <div class="contentPage">
+            <div class="formMain">
+                <img src="../assets/img/Makassar.jpg" alt="" class="formImage">
+                <div class="formContainer">
+                    <p class="formHeading">Join the ILKEA Family</p>
+                    <form class="formMember">
+                        <label for="username">Username</label>
+                        <input class="formBar" type="text" name="username" id="username" placeholder="Enter username here..." required>
+    
+                        <label for="email">Email</label>
+                        <input class="formBar" type="text" name="email" id="email" placeholder="address@gmail.com" required>
+    
+                        <label for="age">Age</label>
+                        <input class="formBar" type="number" name="age" id="age" placeholder="Enter your age here..." required>
+    
+                        <label for="gender">Gender:</label>
+                        <div class="formDiv">
+                            <input type="radio" name="gender" id="male" value="Male">
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" id="female" value="Female">
+                            <label for="female">Female</label>
+                        </div>
+    
+                        <label for="pass">Password</label>
+                        <input class="formBar" type="password" name="pass" id="pass" placeholder="Type the password here..." required>
+    
+                        <label for="address">Address</label>
+                        <input class="formAddress" type="text" name="address" id="address" placeholder="Enter your address here..." required>
+    
+                        <div class="formDiv">
+                            <input type="checkbox" id="checkbox"> I accept the terms and Conditions <br>stated
+                            at ILKEA Sinar Abadi page.
+                        </div>
+    
+                        <button type="submit" class="formSubmit" onclick="validate(event)">JOIN</button>
+    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/app.js"></script>
+</body>
+</html>
